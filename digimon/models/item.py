@@ -2,7 +2,7 @@ from typing import Optional
 
 from pydantic import BaseModel, ConfigDict
 from sqlmodel import Field, SQLModel, create_engine, Session, select, Relationship
-from .merchant import merchants
+#from .merchant import merchants
 
 
 class BaseItem(BaseModel):

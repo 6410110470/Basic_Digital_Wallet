@@ -3,7 +3,7 @@ from sqlmodel import SQLModel, create_engine, Session
 connect_args = {}
 
 engine = create_engine(
-    "postgresql+pg8000://postgres:123456@localhost/DigitalWalletDB",
+    "postgresql+pg8000://postgres:123456@localhost/digimondb",
     connect_args=connect_args,
 )
 

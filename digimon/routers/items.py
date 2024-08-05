@@ -4,7 +4,8 @@ from typing import Optional
 
 from sqlmodel import Field, SQLModel, create_engine, Session, select
 
-from ..models.item import Item, CreatedItem, UpdatedItem, ItemList, DBItem, engine
+from ..models import engine
+from ..models.item import Item, CreatedItem, UpdatedItem, ItemList, DBItem
 
 router = APIRouter(prefix="/items")
 

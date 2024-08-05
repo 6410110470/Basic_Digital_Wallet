@@ -3,7 +3,7 @@ from typing import Optional
 from pydantic import BaseModel, ConfigDict
 from sqlmodel import Field, SQLModel, create_engine, Session, select, Relationship
 
-from .item import item
+#from .item import item
 
 
 class BaseMerchant(BaseModel):
@@ -35,7 +35,7 @@ class DBMerchant(Merchant, SQLModel, table=True):
 
 class MerchantList(BaseModel):
     model_config = ConfigDict(from_attributes=True)
-    items: list[Merchant]
+    merchants: list[Merchant]
     page: int
     page_size: int
     size_per_page: int

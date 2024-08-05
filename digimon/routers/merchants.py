@@ -4,14 +4,9 @@ from typing import Optional
 
 from sqlmodel import Field, SQLModel, create_engine, Session, select
 
-from ..models import (
-    Merchant,
-    CreatedMerchant,
-    UpdatedMerchant,
-    MerchantList,
-    DBMerchant,
-    engine,
-)
+from ..models.merchant import Merchant, CreatedMerchant, UpdatedMerchant, MerchantList, DBMerchant
+
+from ..models import engine
 
 router = APIRouter(prefix="/merchants")
 
