@@ -10,6 +10,13 @@ python = "^3.12"
 fastapi = "^0.111.1"
 sqlmodel = "^0.0.21"
 pg8000 = "^1.31.2"
+bcrypt = "^4.2.0"
+gevent = "^24.2.1"
+asyncpg = "^0.29.0"
+pydantic-settings = "^2.4.0"
+pyjwt = "^2.9.0"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.32"}
+pytest-mock = "^3.14.0"
 
 
 [build-system]
